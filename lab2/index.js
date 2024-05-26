@@ -19,14 +19,12 @@ let create_user = (token) => {
           'authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-            email: 'example3@example.com',
+            email: 'example7@example.com',
             password: 'very_Strong1_password',
             connection: 'Username-Password-Authentication'
         })
     }, function (error, response, body) {
         if (error) throw new Error(error);
-      
-        console.log(body);
       });
 }
 request(options, function (error, response, body) {

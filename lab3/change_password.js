@@ -29,5 +29,5 @@ let change_password = (newPassword, token) => {
 request(options, function (error, response, body) {
     if (error) throw new Error(error);
     token = JSON.parse(body)['access_token'];
-    change_password("New_STRONG2_password", token)
+    change_password("New_STRONG3_password", token)
 });

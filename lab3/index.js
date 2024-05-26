@@ -6,7 +6,7 @@ let user_token_options = { method: 'POST',
   form:
    { grant_type: 'password',
      username: 'example3@example.com',
-     password: 'very_Strong1_password',
+     password: 'New_STRONG3_password',
      audience: 'https://dev-mpo4a74t24cr54of.us.auth0.com/api/v2/',
      scope: 'offline_access',
      client_id: 'dG9RzB82qEj9lSYCjgsGUWikomA1mmUc',
@@ -30,6 +30,8 @@ let refresh_token = (token) =>{
         console.log(JSON.parse(body));
       });
 }
+
+
 
   
 request(user_token_options, function (error, response, body) {
